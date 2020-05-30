@@ -5,7 +5,7 @@ import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
 @WebListener
-public class HelloListner implements ServletContextListener {
+public class HelloListener implements ServletContextListener {
 
     @Override
     public void contextInitialized(ServletContextEvent sce) {
