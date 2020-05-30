@@ -7,8 +7,8 @@
 <h3>Student Grade Table</h3>
 <table>
     <tr>
-        <th>Student ID</th>
-        <th>Student Name</th>
+        <th>Student ID &nbsp;</th>
+        <th>Student Name &nbsp;</th>
         <th>Grade</th>
     </tr>
     <#list students as student>
