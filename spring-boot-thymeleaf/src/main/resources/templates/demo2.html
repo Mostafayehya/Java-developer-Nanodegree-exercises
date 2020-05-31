@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Thymeleaf Demo</title>
+</head>
+<body>
+
+<h3>Users Information</h3>
+
+<table>
+    <tr>
+        <th>ID &nbsp; &nbsp; &nbsp; &nbsp;</th>
+        <th>Name &nbsp; &nbsp; &nbsp; &nbsp;</th>
+        <th>Age</th>
+    </tr>
+
+    <tr th:each="user : ${listOfUsers}">>
+
+        <td th:text = "${user.id}"></td>
+        <td th:text = "${user.name}"></td>
+        <td th:text = "${user.age}"></td>
+    </tr>
+
+</table>
+</body>
+</html>
