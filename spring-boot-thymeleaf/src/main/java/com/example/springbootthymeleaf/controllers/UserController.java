@@ -42,7 +42,8 @@ public class UserController {
     @RequestMapping("demo")
     public String demo(Model model) {
         model.addAttribute("message", "Hello, World");
-        double grade = 40;
+        double grade = 100;
+
         model.addAttribute("grade", grade);
         model.addAttribute("GPA", convertGPA(grade));
 
