@@ -1,0 +1,28 @@
+package com.example.springbootexception.exceptions;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.HandlerExceptionResolver;
+import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@Configuration
+public class MyHandlerExceptionResolver implements HandlerExceptionResolver {
+
+    @Override
+    public ModelAndView resolveException(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, Exception e) {
+
+        ModelAndView mv = new ModelAndView();
+
+        if(e instanceof ArithmeticException){
+            mv.setViewName("mathError");
+        }
+        if (e instanceof NullPointerException){
+            mv.setViewName("nullError");
+        }
+        mv.addObject("exception",e.toString()); //todo why we choose "exception" name
+
+        return mv;
+    }
+}

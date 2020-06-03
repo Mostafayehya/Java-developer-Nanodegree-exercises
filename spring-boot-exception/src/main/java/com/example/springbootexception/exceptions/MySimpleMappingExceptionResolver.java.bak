@@ -1,0 +1,22 @@
+package com.example.springbootexception.exceptions;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.handler.SimpleMappingExceptionResolver;
+
+import java.util.Properties;
+
+@Configuration
+public class MySimpleMappingExceptionResolver {
+
+    @Bean
+    public SimpleMappingExceptionResolver getSimpleMappingExceptionResolver(){
+        SimpleMappingExceptionResolver resolver =
+                new SimpleMappingExceptionResolver();
+        Properties properties = new Properties();
+        properties.setProperty("java.lang.ArithmeticException","mathError");
+        properties.setProperty("java.lang.NullPointerException","nullError");
+        resolver.setExceptionMappings(properties);
+        return resolver;
+    }
+}
