@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Lesson2 (rest apis).iml" filepath="$PROJECT_DIR$/.idea/Lesson2 (rest apis).iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/BootstrapApplication.iml" filepath="$PROJECT_DIR$/.idea/BootstrapApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/bootstrap/bootstrap.iml" filepath="$PROJECT_DIR$/bootstrap/bootstrap.iml" />
     </modules>
   </component>
