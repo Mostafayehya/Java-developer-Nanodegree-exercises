@@ -1,3 +1,4 @@
+/*
 package com.udacity.DogRestApi.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,8 +11,6 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-@EnableWebSecurity
-@Configuration
 public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
@@ -39,3 +38,4 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
         return new BCryptPasswordEncoder();
     }
 }
+*/
